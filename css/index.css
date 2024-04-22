@@ -699,7 +699,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 16px;
 }
 .my-orders__order-info-footer-price {
   flex: 0 0 auto;
@@ -708,13 +708,12 @@ img {
   color: #fff;
 }
 .my-orders__order-info-footer-tag {
+  max-width: 120px;
   padding: 7px 14px;
   border-radius: 32px;
-}
-@media (max-width: 360px) {
-  .my-orders__order-info-footer-tag {
-    padding: 5px 10px;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .my-orders__order-info-footer-tag_pending {
   color: #12c2e9;
@@ -743,15 +742,6 @@ img {
   -webkit-text-fill-color: transparent;
 }
 .my-orders__order-info-footer-tag-text {
-  max-width: 120px;
   font-weight: 400;
   font-size: 11px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-@media (max-width: 360px) {
-  .my-orders__order-info-footer-tag-text {
-    font-size: 10px;
-  }
 }
