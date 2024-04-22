@@ -1,2 +1,7 @@
 .main {
+  overflow: hidden;
+
+  & .container {
+    padding: 22px 16px;
+  }
 }
