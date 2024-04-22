@@ -617,3 +617,141 @@ img {
   font-size: 16px;
   color: #fff;
 }
+
+.my-orders__title {
+  margin: 0 0 23px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+.my-orders__orders {
+  margin: 0 -16px;
+  padding: 20px 16px 30px;
+  border-radius: 20px 20px 0 0;
+  background-color: #23152c;
+}
+.my-orders__orders-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.my-orders__orders-controls-button {
+  display: inline-block;
+  padding: 15px 31px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #473253;
+  border-radius: 20px;
+  background-color: #31203a;
+  cursor: pointer;
+}
+@media (max-width: 360px) {
+  .my-orders__orders-controls-button {
+    flex: 1 1 auto;
+    padding: 14px 20px;
+  }
+}
+.my-orders__orders-controls-button.active {
+  background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+}
+.my-orders__order {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 23px 0 0;
+}
+.my-orders__order-figure {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid #473253;
+  border-radius: 20px;
+}
+.my-orders__order-figure-image {
+  display: block;
+  width: 98px;
+  height: 95px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.my-orders__order-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.my-orders__order-info-date {
+  margin: 0 0 3px;
+  font-weight: 400;
+  font-size: 9px;
+  color: #6c5479;
+}
+.my-orders__order-info-title {
+  flex: 1 1 auto;
+  min-height: 38px;
+  margin: 0 0 6px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+}
+.my-orders__order-info-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.my-orders__order-info-footer-price {
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.my-orders__order-info-footer-tag {
+  padding: 7px 14px;
+  border-radius: 32px;
+}
+@media (max-width: 360px) {
+  .my-orders__order-info-footer-tag {
+    padding: 5px 10px;
+  }
+}
+.my-orders__order-info-footer-tag_pending {
+  color: #12c2e9;
+  background: rgba(18, 194, 233, 0.1);
+}
+.my-orders__order-info-footer-tag_onprogress {
+  color: #f6b34f;
+  background: rgba(246, 179, 79, 0.1);
+}
+.my-orders__order-info-footer-tag_fullfield {
+  color: #59cd46;
+  background: rgba(89, 205, 70, 0.1);
+}
+.my-orders__order-info-footer-tag_rejected {
+  color: #cd4646;
+  background: rgba(18, 194, 233, 0.1);
+}
+.my-orders__order-info-footer-tag_ready {
+  background: linear-gradient(90deg, rgba(18, 194, 233, 0.1) 0%, rgba(196, 113, 237, 0.1) 50%, rgba(246, 79, 89, 0.1) 100%);
+}
+.my-orders__order-info-footer-tag_ready .my-orders__order-info-footer-tag-text {
+  text-align: right;
+  background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.my-orders__order-info-footer-tag-text {
+  max-width: 120px;
+  font-weight: 400;
+  font-size: 11px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 360px) {
+  .my-orders__order-info-footer-tag-text {
+    font-size: 10px;
+  }
+}

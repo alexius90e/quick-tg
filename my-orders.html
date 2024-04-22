@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick - My orders</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <div class="header__info-user">
+            <figure class="header__info-user-avatar">
+              <img class="header__info-user-avatar-image" src="./assets/avatar.png" alt="avatar" />
+            </figure>
+            <div class="header__info-user-name">UserName</div>
+          </div>
+
+          <div class="header__info-tg">
+            <span class="header__info-tg-icon"></span>
+            <span class="header__info-tg-name">@poizonqq</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="my-orders">
+          <h2 class="my-orders__title">Мои заказы</h2>
+
+          <div class="my-orders__orders">
+            <div class="my-orders__orders-controls">
+              <button class="my-orders__orders-controls-button active">Активные</button>
+              <button class="my-orders__orders-controls-button">Завершенные</button>
+            </div>
+
+            <div class="my-orders__order">
+              <figure class="my-orders__order-figure">
+                <img
+                  class="my-orders__order-figure-image"
+                  src="./assets/good-image.jpg"
+                  alt="good"
+                />
+              </figure>
+
+              <div class="my-orders__order-info">
+                <div class="my-orders__order-info-date">12.12.2012 12:12</div>
+                <div class="my-orders__order-info-title">Название товара в одну строку</div>
+                <div class="my-orders__order-info-footer">
+                  <div class="my-orders__order-info-footer-price">2 577 ₽</div>
+                  <div
+                    class="my-orders__order-info-footer-tag my-orders__order-info-footer-tag_pending"
+                  >
+                    <span class="my-orders__order-info-footer-tag-text">Ждет подтверждения</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-orders__order">
+              <figure class="my-orders__order-figure">
+                <img
+                  class="my-orders__order-figure-image"
+                  src="./assets/good-image.jpg"
+                  alt="good"
+                />
+              </figure>
+
+              <div class="my-orders__order-info">
+                <div class="my-orders__order-info-date">12.12.2012 12:12</div>
+                <div class="my-orders__order-info-title">Название товара в одну строку</div>
+                <div class="my-orders__order-info-footer">
+                  <div class="my-orders__order-info-footer-price">2 577 ₽</div>
+                  <div
+                    class="my-orders__order-info-footer-tag my-orders__order-info-footer-tag_onprogress"
+                  >
+                    <span class="my-orders__order-info-footer-tag-text">Доставляется</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-orders__order">
+              <figure class="my-orders__order-figure">
+                <img
+                  class="my-orders__order-figure-image"
+                  src="./assets/good-image.jpg"
+                  alt="good"
+                />
+              </figure>
+
+              <div class="my-orders__order-info">
+                <div class="my-orders__order-info-date">12.12.2012 12:12</div>
+                <div class="my-orders__order-info-title">Название товара в одну строку</div>
+                <div class="my-orders__order-info-footer">
+                  <div class="my-orders__order-info-footer-price">2 577 ₽</div>
+                  <div
+                    class="my-orders__order-info-footer-tag my-orders__order-info-footer-tag_fullfield"
+                  >
+                    <span class="my-orders__order-info-footer-tag-text">Доставлен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-orders__order">
+              <figure class="my-orders__order-figure">
+                <img
+                  class="my-orders__order-figure-image"
+                  src="./assets/good-image.jpg"
+                  alt="good"
+                />
+              </figure>
+
+              <div class="my-orders__order-info">
+                <div class="my-orders__order-info-date">12.12.2012 12:12</div>
+                <div class="my-orders__order-info-title">Название товара в одну строку</div>
+                <div class="my-orders__order-info-footer">
+                  <div class="my-orders__order-info-footer-price">2 577 ₽</div>
+                  <div
+                    class="my-orders__order-info-footer-tag my-orders__order-info-footer-tag_rejected"
+                  >
+                    <span class="my-orders__order-info-footer-tag-text">Отменен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-orders__order">
+              <figure class="my-orders__order-figure">
+                <img
+                  class="my-orders__order-figure-image"
+                  src="./assets/good-image.jpg"
+                  alt="good"
+                />
+              </figure>
+
+              <div class="my-orders__order-info">
+                <div class="my-orders__order-info-date">12.12.2012 12:12</div>
+                <div class="my-orders__order-info-title">Название товара в одну строку</div>
+                <div class="my-orders__order-info-footer">
+                  <div class="my-orders__order-info-footer-price">2 577 ₽</div>
+                  <div
+                    class="my-orders__order-info-footer-tag my-orders__order-info-footer-tag_ready"
+                  >
+                    <span class="my-orders__order-info-footer-tag-text">Завершен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
