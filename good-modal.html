@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <div class="header__info-user">
+            <figure class="header__info-user-avatar">
+              <img class="header__info-user-avatar-image" src="./assets/avatar.png" alt="avatar" />
+            </figure>
+            <div class="header__info-user-name">UserName</div>
+          </div>
+
+          <div class="header__info-tg">
+            <span class="header__info-tg-icon"></span>
+            <span class="header__info-tg-name">@poizonqq</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main_goods">
+      <div class="container">
+        <section class="good-info">
+          <figure class="good-info__figure">
+            <img class="good-info__figure-image" src="./assets/good-image.jpg" alt="good-image" />
+            <figcaption class="good-info__figure-caption">+6 фото</figcaption>
+          </figure>
+
+          <div class="good-info__info">
+            <div class="good-info__info-name">Название товара в две строки или более</div>
+            <div class="good-info__info-price">2 577 ₽</div>
+          </div>
+
+          <div class="good-info__details">
+            <div class="good-info__details-size">42 размер</div>
+            <div class="good-info__details-article">
+              <span class="good-info__details-article-title">Номер заказа:</span>
+              <span class="good-info__details-article-number">5131das58d1</span>
+            </div>
+          </div>
+
+          <div class="good-info__controls">
+            <button class="good-info__controls-button good-info__controls-button_payed active">
+              Оплачен
+            </button>
+            <button class="good-info__controls-button good-info__controls-button_purchased">
+              Закуплен
+            </button>
+            <button class="good-info__controls-button good-info__controls-button_delivered">
+              В доставке
+            </button>
+            <button class="good-info__controls-button good-info__controls-button_finished">
+              Завершен
+            </button>
+          </div>
+
+          <div class="good-info__history">
+            <h2 class="good-info__history-title">История заказа</h2>
+
+            <ul class="good-info__history-list">
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">25 августа</span>
+              </li>
+
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">24 августа</span>
+              </li>
+
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">23 августа</span>
+              </li>
+
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">22 августа</span>
+              </li>
+
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">21 августа</span>
+              </li>
+
+              <li class="good-info__history-list-item">
+                <span class="good-info__history-list-item-text">Принят продавцом</span>
+                <span class="good-info__history-list-item-date">20 августа</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="good-info__payment">
+            <button class="good-info__payment-button">
+              <span class="good-info__payment-button-text">Перейти к оплате</span>
+              <span class="good-info__payment-button-price">2 577 ₽</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="good-modal">
+          <div class="good-modal__body">
+            <h3 class="good-modal__title">Заказ оплачен</h3>
+            <form class="good-modal__form">
+              <label class="good-modal__form-label">
+                <div class="good-modal__form-label-text">Фамилия Имя Отчество</div>
+                <div class="good-modal__form-label-wrapper">
+                  <input
+                    class="good-modal__form-label-input"
+                    type="text"
+                    placeholder="Фамилия Имя Отчество"
+                    required
+                  />
+                </div>
+              </label>
+
+              <label class="good-modal__form-label">
+                <div class="good-modal__form-label-text">Телефон</div>
+                <div class="good-modal__form-label-wrapper">
+                  <input
+                    class="good-modal__form-label-input"
+                    type="text"
+                    placeholder="+7"
+                    required
+                  />
+                </div>
+              </label>
+
+              <label class="good-modal__form-label">
+                <div class="good-modal__form-label-text">Адрес доставки СДЭК</div>
+                <div class="good-modal__form-label-wrapper">
+                  <input
+                    class="good-modal__form-label-input"
+                    type="text"
+                    placeholder="Начните вводить..."
+                    required
+                  />
+                </div>
+              </label>
+
+              <fieldset class="good-modal__form-submit">
+                <button class="good-modal__form-submit-button">Отправить</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

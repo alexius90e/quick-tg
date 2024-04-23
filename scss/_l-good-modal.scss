@@ -1,0 +1,90 @@
+.good-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.81);
+
+  &__body {
+    flex: 1 1 auto;
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 26px 16px 48px;
+    border-radius: 23px 23px 0 0;
+    background-color: #23152c;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  &__form {
+    &-label {
+      display: block;
+      margin: 0 0 17px;
+
+      &-text {
+        margin: 0 0 8px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      &-wrapper {
+        padding: 1px;
+        border-radius: 15px;
+        background-color: #473253;
+      }
+
+      &-input {
+        display: inline-block;
+        width: 100%;
+        padding: 18px 26px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        border-radius: inherit;
+        background-color: #31203a;
+        outline: none;
+      }
+
+      &:has(.good-modal__form-label-input:focus) &-wrapper {
+        background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+      }
+
+      &:has(.good-modal__form-label-input:valid) &-wrapper {
+        background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+      }
+    }
+
+    &-submit {
+      margin: 26px 0 0;
+      padding: 0;
+      border: none;
+
+      &-button {
+        display: inline-block;
+        width: 100%;
+        padding: 22px;
+        box-sizing: border-box;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+      }
+    }
+  }
+}
