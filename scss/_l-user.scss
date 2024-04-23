@@ -1,0 +1,136 @@
+.user {
+  position: relative;
+  z-index: 100;
+  margin: -100px 0 0;
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin: 0 auto 18px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+    border-radius: 150px;
+    background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+
+    &-image {
+      display: block;
+      width: 136px;
+      height: 136px;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+
+  &__name {
+    margin: 0 0 32px;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+
+    &-title {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &-value {
+      color: #fff;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & > * {
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 20px;
+    }
+
+    &-orders {
+      flex: 0 0 calc(50% - 10px);
+      display: flex;
+      flex-direction: column;
+      background: #31203a;
+
+      &-label {
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      &-value {
+        font-weight: 700;
+        font-size: 38px;
+        color: #fff;
+      }
+    }
+
+    &-points {
+      flex: 0 0 calc(50% - 10px);
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+
+      &-label {
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      &-value {
+        font-weight: 700;
+        font-size: 38px;
+        color: #fff;
+      }
+    }
+
+    &-phone {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      background: #31203a;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-label {
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      &-value {
+        font-weight: 700;
+        font-size: 22px;
+        color: #fff;
+      }
+
+      &-attach {
+        flex: 1 1 auto;
+        max-width: 158px;
+
+        &-button {
+          width: 100%;
+          padding: 15px;
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          color: #fff;
+          border: 1px solid #473253;
+          border-radius: 20px;
+          background: #31203a;
+        }
+      }
+    }
+  }
+}

@@ -2,10 +2,19 @@
   position: relative;
   z-index: 100;
 
+  &_user {
+    z-index: 10;
+  }
+
   & .container {
     padding: 24px 16px;
-    background: #23152c;
+    background-color: #23152c;
     border-radius: 0 0 20px 20px;
+  }
+
+  &_user .container {
+    padding-bottom: 92px;
+    background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
   }
 
   &__info {

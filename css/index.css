@@ -44,10 +44,17 @@ img {
   position: relative;
   z-index: 100;
 }
+.header_user {
+  z-index: 10;
+}
 .header .container {
   padding: 24px 16px;
-  background: #23152c;
+  background-color: #23152c;
   border-radius: 0 0 20px 20px;
+}
+.header_user .container {
+  padding-bottom: 92px;
+  background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
 }
 .header__info {
   position: relative;
@@ -255,6 +262,11 @@ img {
 
 .main {
   overflow: hidden;
+}
+.main_user {
+  position: relative;
+  z-index: 20;
+  overflow: visible;
 }
 .main .container {
   padding: 22px 16px;
@@ -1096,4 +1108,123 @@ img {
   font-weight: 400;
   font-size: 12px;
   color: #6c5479;
+}
+
+.user {
+  position: relative;
+  z-index: 100;
+  margin: -100px 0 0;
+}
+.user__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  margin: 0 auto 18px;
+  box-sizing: border-box;
+  aspect-ratio: 1/1;
+  border-radius: 150px;
+  background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+}
+.user__avatar-image {
+  display: block;
+  width: 136px;
+  height: 136px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.user__name {
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+.user__name-title {
+  color: rgba(255, 255, 255, 0.6);
+}
+.user__name-value {
+  color: #fff;
+}
+.user__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.user__info > * {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.user__info-orders {
+  flex: 0 0 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  background: #31203a;
+}
+.user__info-orders-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.6;
+}
+.user__info-orders-value {
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+}
+.user__info-points {
+  flex: 0 0 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+}
+.user__info-points-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.6;
+}
+.user__info-points-value {
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+}
+.user__info-phone {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  background: #31203a;
+}
+.user__info-phone-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.user__info-phone-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.6;
+}
+.user__info-phone-value {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+.user__info-phone-attach {
+  flex: 1 1 auto;
+  max-width: 158px;
+}
+.user__info-phone-attach-button {
+  width: 100%;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #473253;
+  border-radius: 20px;
+  background: #31203a;
 }

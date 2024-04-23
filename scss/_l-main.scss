@@ -1,6 +1,12 @@
 .main {
   overflow: hidden;
 
+  &_user {
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+  }
+
   & .container {
     padding: 22px 16px;
   }
